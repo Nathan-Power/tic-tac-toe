@@ -1,0 +1,276 @@
+html,
+body {
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(0, 0, 0);
+}
+
+
+.title {
+    font-size: 42px;
+    color: rgb(39, 5, 161);
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-weight: 900;
+    display: block;
+    font-size: 5em;
+    text-shadow: 2px 2px #ff0000;
+}
+
+.flex-container {
+    display: flex;
+
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.noClick {
+    pointer-events: none;
+}
+
+.board-container {
+    height: 100%;
+    width: 100%
+}
+
+.board {
+    width: 618px;
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    /* add below this second */
+    border: 3px solid mediumslateblue;
+    font-size: 56px;
+}
+
+.square img {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+	width: 95%;
+	max-width: 70em;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+.square:hover {
+    background: floralwhite;
+    cursor: pointer;
+}
+
+.winner {
+    display: none;
+    padding: 10px;
+    font-size: 32px;
+    color: royalblue;
+}
+
+.loc {
+    display: none;
+}
+
+
+/* typography
+================= */
+
+h1 {
+	font-size: 2rem;
+    margin-top: 0;
+    color: rgb(231, 195, 175);
+}
+
+
+
+/* lists
+================= */
+
+.unstyled-list {
+    margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+/* columns
+================= */
+
+.col-1 {
+	width: 28%;
+    float: left;
+    padding: 10;
+    text-align: left;
+}
+
+.col-2 {
+	width: 28%;
+    float: right;
+    padding: 10;
+    position: relative;
+    margin-right: 0px;
+    text-align: left;
+}
+
+/* points
+================= */
+
+.points {
+    font-weight: 300;
+	font-size: 3.7rem;
+    margin-top: 0;
+    color: rgb(238, 209, 192);
+    font-family: 'Orbitron', sans-serif;
+    flex-wrap: wrap;
+}
+
+
+/* button
+================= */
+
+.button {
+	display: inline-block;
+	font-size: 1.15rem;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-width: 2px;
+	border-style: solid;
+    padding: .5em 2.5em;
+    margin-left: -12px;
+}
+
+.button-small {
+	font-size: .7rem;
+	font-weight: 700;
+}
+
+.button-accent {
+	color: #00ff6c;
+	border-color: #00ff6c;
+}
+
+.button-accent:hover,
+.button-accent:focus {
+	background: #00ff6c;
+	color: #232323;
+}
+
+@media only screen and (max-device-width : 750px) {
+
+    .title {
+        font-size: 2.5em;        
+    }
+
+    .board {
+        width: 288px;
+    }
+
+    .square {
+        border: 3px solid rgb(221, 44, 0);
+        width:90px;
+        height: 90px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .unstyled-list {
+        width: 150px;
+    }
+    
+    .points {
+        font-size: 2.5rem;
+    }
+
+    .button {
+        font-size: .9rem;
+        padding: .5em 2.0em;
+        margin: -7px;
+        left: 10%;
+        margin-left: -32px;
+    }
+}
+
+@media only screen and (max-device-width : 320px) {
+        .title {
+            font-size: 3em;        
+        }
+    
+        .board {
+            width: 288px;
+        }
+    
+        .square {
+            border: 3px solid rgb(71, 212, 52);
+            width:90px;
+            height: 90px;
+        }
+    
+        h1 {
+            font-size: 1.2rem;
+        }
+    
+        .unstyled-list {
+            width: 150px;
+        }
+        
+        .points {
+            font-size: 2rem;
+        }
+    
+        .button {
+            font-size: .9rem;
+            padding: .5em 2.0em;
+            margin: -7px;
+            left: 10%;
+            margin-left: -32px;
+        }
+    
+        .centereverything {
+            text-align: center;
+            display: inline-block;
+        }
+    
+    }
+/* This is where you would specify the width and hight of your images */
+}
+
+/* maybe add an animation */
+
+
+/* .pulsate {
+    -webkit-animation: pulsate 5s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0.5;
+} */
+
+
+/* @-webkit-keyframes pulsate {
+    0% {
+        opacity: 0.5;
+        font-size: 40px;
+    }
+    10% {
+        opacity: 1.0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+} */

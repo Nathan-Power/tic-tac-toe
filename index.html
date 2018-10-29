@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <title>NP | Tic Tac Toe</title>
+</head>
+
+<body>
+    <div>
+        <div class="board-container flex-container flex-column flex-center">
+
+            <div class="flex-container">
+                <div class='title'>Tic Tac Toe</div>
+            </div>
+
+            <div class='flex-container flex-center'>
+                <div class='winner'></div>
+            </div>
+
+            <div class="board flex-container flex-column">
+                <div class="points">
+                    <div class="col-1">
+                        <ul class="unstyled-list">
+                            <h1 id="pl1">Player 1 </h1><div id="score-1" class="score-1">0</div>
+                        </ul>
+                    </div>
+
+                    <div class="col-2">
+                        <ul class="unstyled-list">
+                            <h1 id="pl2">Player 2 </h1><div id="score-2" class="score-2">0</div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class='flex-container flex-center'>
+            </div>
+            <div class="board flex-container flex-wrap ">
+                <div id="squarebox1" class="square flex-container flex-center"></div>
+                <div id="squarebox2" class="square flex-container flex-center"></div>
+                <div id="squarebox3" class="square flex-container flex-center"></div>
+                <div id="squarebox4" class="square flex-container flex-center"></div>
+                <div id="squarebox5" class="square flex-container flex-center"></div>
+                <div id="squarebox6" class="square flex-container flex-center"></div>
+                <div id="squarebox7" class="square flex-container flex-center"></div>
+                <div id="squarebox8" class="square flex-container flex-center"></div>
+                <div id="squarebox9" class="square flex-container flex-center"></div>
+            </div>
+        </div>
+        <div class='container'>
+                <a href class='button button-accent'>Reset</a>
+        </div>
+    </div>
+</body>
+
+<script src="app.js"></script>
+
+</html>
